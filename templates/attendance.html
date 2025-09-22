@@ -105,7 +105,13 @@
 
       <!-- Actions -->
       <div class="flex gap-4">
-        <button class="flex-1 py-3 bg-white rounded-xl shadow border hover:bg-gray-50 font-medium">B-Safe</button>
+        <!-- B-Safe Button -->
+        <form action="{{ url_for('attendance') }}" method="get" class="flex-1">
+          <button type="submit" class="w-full py-3 bg-white rounded-xl shadow border hover:bg-gray-50 font-medium">
+            B-Safe
+          </button>
+        </form>
+
         <button class="flex-1 py-3 bg-white rounded-xl shadow border hover:bg-gray-50 font-medium">LAB</button>
         <button class="flex-1 py-3 bg-white rounded-xl shadow border hover:bg-gray-50 font-medium">Holidays</button>
       </div>
